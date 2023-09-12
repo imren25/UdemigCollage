@@ -1,0 +1,354 @@
+/* resetting default properties */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.aligner {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 75px;
+}
+
+.row-aligner {
+    margin-top: 20px;
+
+}
+
+.col-aligner {
+    flex-basis: 30%;
+    border-radius: 10px;
+    padding: 15px 10px;
+    margin-bottom: 30px;
+}
+
+/* header */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(pictures/bg.webp);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bi-list {
+    color: white;
+    font-size: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.nav-links a img {
+    width: 100px;
+}
+
+.nav-links a img:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 10px 12px;
+}
+
+.nav-links ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+.nav-links ul li a::after {
+    content: '';
+    background-color: red;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+}
+
+.nav-links ul li a:hover::after {
+    width: 100%;
+    transition: .3s;
+}
+
+.text-box {
+    width: 90%;
+    text-align: center;
+    color: white;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -64%);
+}
+
+.text-box h1 {
+    font-size: 60px;
+}
+
+.text-box p {
+    margin: 10px 40px;
+    font-size: 20px;
+}
+
+.btn {
+    border: 1px white solid;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px auto;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: red;
+    border-color: red;
+    transition: 0.3s;
+}
+
+.btn a {
+    color: antiquewhite;
+}
+
+/* courses */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses h1,
+.campus h1,
+.facilities h1,
+footer h1 {
+    font-size: 35px !important;
+}
+
+.course {
+    background-color: #E9E5DE;
+  
+
+}
+
+.course:hover, .testimonials-col:hover, .contact:hover  {
+    box-shadow: 0 0 10px rgba(4, 10, 30, 0.7);
+    transition: .3s;
+}
+
+.courses p,
+.campus p,
+.facilities p {
+    color: rgb(60, 60, 60);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 15px;
+}
+
+/* Campus */
+
+.campus-col {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.campus-col img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 94%;
+    height: 85%;
+    margin: 20px 10px;
+    border-radius: 10px;
+}
+
+.layer h3 {
+    opacity: 0;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: red;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.layer:hover {
+    background-color: rgba(200, 100, 50, 0.5);
+}
+
+.layer:hover h3 {
+    opacity: 1;
+    bottom: 50%;
+}
+
+/* Facilities */
+.facilities-col img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.facilities-col img:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.facilities-col {
+    text-align: left;
+}
+
+.facilities-col p {
+    color: rgb(60, 60, 60);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.facilities-col h3 {
+    margin-top: 9px;
+}
+
+/* Testimonials */
+
+.testimonials {
+    text-align: center;
+}
+
+.testimonials-row {
+    display: flex;
+    text-align: left;
+}
+
+.testimonials p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    padding: 20px;
+}
+
+.testimonials-col {
+    display: flex;
+    background-color: #FAEBD7;
+    justify-content: space-between;
+    margin: 32px;
+    cursor: pointer;
+}
+
+.testimonials-row img {
+    width: 63px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-top: 10px;
+
+}
+
+.stars i {
+    color: #F04838;
+    margin: -2px;
+}
+
+.testimonials-text i,
+.testimonials-text h2 {
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.testimonials-text p {
+    margin: -20px;
+}
+
+/* contact  */
+.contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(pictures/london.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 100px 0;
+}
+
+.contact h1 {
+    margin-bottom: 30px;
+    padding: 0;
+    font-size: 35px;
+}
+
+/* footer */
+footer {
+    padding-top: 8px !important;
+}
+
+footer p {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+footer .bi {
+    color: red;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.icons {
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links ul {
+        display: none;
+    }
+
+    .bi-list {
+        display: block;
+    }
+
+    .text-box h1 {
+        font-size: 40px;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .testimonials-row {
+        display: block;
+    }
+
+    .contact h1 {
+        font-size: 25px;
+    }
+}
